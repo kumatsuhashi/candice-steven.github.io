@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(cottagecore.jpg); 
+    background-size: auto; 
+    background-position: center; 
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+.row{
+	margin: auto;
+	height: 70%;
+	width: 85%;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+}
+.col{
+	flex-basis: 50%;
+}
+h1{
+	color: #fff;
+	font-size: 100px;
+}
+p{
+	color: #fff;
+	font-size: 15px;
+	line-height: 15px;
+}
+button{
+	width: 180px;
+	color: #000;
+	font-size: 12px;
+	padding: 12px 0;
+	background: #fff;
+	border: 0;
+	border-radius: 20px;
+	outline: none;
+	margin-top: 30px;
+}
+.card{
+	width: 200px;
+	height: 230px;
+	display: inline-block;
+	border-radius: 10px;
+	padding: 15px 25px;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin: 10px 15px;
+	background-position: center;
+	background-size: cover;
+	transition: transform 0.5s;
+}
+.card1{
+	background-image: url(./image1.jpg);
+}
+.card2{
+	background-image: url(./image2.jpg);
+}
+.card3{
+	background-image: url(./image3.jpg);
+}
+.card4{
+	background-image: url(./image4.jpg);
+}
+.card5{
+	background-image: url(./image5.jpg);
+}
+.card6{
+	background-image: url(./image6.jpg);
+}
+.card:hover{
+	transform: translateY(-10px);
+}
+h5{
+	font-size: 20px;
+	color: #000;
+	text-shadow: 0 0 5px #999;
+}
+.card p{
+	text-shadow: 0 0 15px #000;
+	font-size: 15px;
+}
+.signature{
+    width: 85%;
+}
+.logo{
+    width: 300px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #964B00;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.signature{
+    width: 99%;
+    position: fixed;
+    top: 85%;
+    text-align: right;
+    color: #fff;
+}
+.signature h1{
+    font-size: 10px;
+    margin-top: 120px;
+}
